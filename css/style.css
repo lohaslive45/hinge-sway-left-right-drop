@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 80px;
+  font-weight: 900;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-animation: hinge 2s ease-in-out;
+          animation: hinge 2s ease-in-out;
+}
+
+@-webkit-keyframes hinge {
+  20%,
+  60% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate(55deg);
+            transform: rotate(55deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(600px);
+            transform: translateY(600px);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  20%,
+  60% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate(55deg);
+            transform: rotate(55deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(600px);
+            transform: translateY(600px);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
